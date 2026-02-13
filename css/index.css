@@ -1,0 +1,105 @@
+/* ===== HERO ===== */
+.hero{
+  position:relative;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  overflow:hidden;
+}
+
+#web3-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+
+.hero h1{
+  font-size:64px;
+  line-height:1.1;
+}
+
+.hero p{
+  margin-top:20px;
+}
+
+/* ===== SECTIONS ===== */
+.solutions-premium,
+.web3-section,
+.about-premium{
+  padding: 100px 8%;
+}
+
+
+/* ===== INDEX-ONLY MR BACKGROUND ===== */
+
+.index-after-hero{
+  position: relative;
+}
+
+/* MR canvas only for index page */
+#index-after-hero #mr-tech-bg,
+.index-after-hero #mr-tech-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* keep index content above canvas */
+.index-after-hero section,
+.index-after-hero footer{
+  position: relative;
+  z-index: 2;
+}
+/* ===== FIX MR CANVAS HEIGHT (INDEX ONLY) ===== */
+
+.index-after-hero {
+  position: relative;
+  min-height: 200vh;   /* ensures real scrollable height */
+}
+
+/* MR background canvas fills wrapper */
+.index-after-hero #mr-tech-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* keep content above canvas */
+.index-after-hero section,
+.index-after-hero footer {
+  position: relative;
+  z-index: 2;
+}
+.after-hero {
+  position: relative;
+  background: #030712;
+  overflow: hidden;
+}
+
+#mr-tech-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.after-hero > *:not(canvas) {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,77 @@
+/* ===== MR GLOBAL BACKGROUND ===== */
+#mr-tech-bg{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+}
+
+/* keep content above */
+.navbar, section, footer{
+  position:relative;
+  z-index:2;
+}
+
+/* ===== MR HERO ===== */
+.mr-hero{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  min-height:100vh;
+  padding:120px 8%;
+  gap:60px;
+}
+
+.mr-hero h1{
+  font-size:64px;
+  line-height:1.1;
+}
+
+.mr-hero p{
+  margin-top:20px;
+  max-width:520px;
+}
+
+.mr-hero-right img{
+  width:100%;
+  border-radius:20px;
+}
+
+/* ===== INDUSTRIES ===== */
+.mr-industries{
+  padding:120px 8%;
+  display:flex;
+  flex-direction:column;
+  gap:120px;
+}
+
+.mr-block{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.mr-block img{
+  width:100%;
+  border-radius:16px;
+}
+
+/* ===== EXPERTISE ===== */
+.mr-expertise{
+  padding:140px 8%;
+  text-align:center;
+}
+
+.mr-cards{
+  margin-top:60px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.mr-card{
+  background:rgba(255,255,255,.05);
+  padding:40px;
+  border-radius:18px;
+}

@@ -1,0 +1,578 @@
+/* ===== RESPONSIVE STYLES FOR MOBILE ===== */
+
+/* ===== MOBILE NAVIGATION ===== */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 14px 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: rgba(5, 10, 25, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        transition: right 0.4s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 24px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-links.active a:nth-child(1) { transition-delay: 0.1s; }
+    .nav-links.active a:nth-child(2) { transition-delay: 0.2s; }
+    .nav-links.active a:nth-child(3) { transition-delay: 0.3s; }
+    .nav-links.active a:nth-child(4) { transition-delay: 0.4s; }
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+}
+
+/* ===== INDEX PAGE - HERO ===== */
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh;
+        padding: 80px 20px 40px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}
+
+/* ===== INDEX PAGE - SOLUTIONS SECTION ===== */
+@media (max-width: 768px) {
+    .solutions-premium {
+        padding: 80px 20px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .solutions-left {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .solutions-left h2 {
+        font-size: 36px;
+    }
+
+    .solutions-left p {
+        font-size: 15px;
+    }
+
+    .solutions-right {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .solution-card {
+        padding: 30px 24px;
+    }
+
+    .solution-card svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .solution-card h3 {
+        font-size: 20px;
+    }
+
+    .solution-card p {
+        font-size: 14px;
+    }
+}
+
+/* ===== INDEX PAGE - WEB3 SECTION ===== */
+@media (max-width: 768px) {
+    .web3-section {
+        padding: 80px 20px;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .web3-left h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .web3-right {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .web3-feature {
+        padding: 28px 24px;
+    }
+
+    .web3-feature h4 {
+        font-size: 18px;
+    }
+
+    .web3-feature p {
+        font-size: 14px;
+    }
+
+    .stack-graphic {
+        display: none;
+    }
+}
+
+/* ===== INDEX PAGE - ABOUT SECTION ===== */
+@media (max-width: 768px) {
+    .about-premium {
+        padding: 80px 20px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-left {
+        height: 200px;
+    }
+
+    .about-title {
+        font-size: 64px;
+    }
+
+    .about-right {
+        gap: 24px;
+    }
+
+    .about-card {
+        padding: 24px 20px;
+    }
+
+    .about-card p {
+        font-size: 14px;
+    }
+
+    .about-btn {
+        padding: 14px 32px;
+        font-size: 15px;
+    }
+}
+
+/* ===== MR SOLUTIONS PAGE ===== */
+@media (max-width: 768px) {
+    .mr-hero {
+        grid-template-columns: 1fr;
+        padding: 100px 20px 60px;
+        gap: 40px;
+        min-height: auto;
+    }
+
+    .mr-hero h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .mr-hero p {
+        font-size: 15px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .mr-hero-right img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .mr-industries {
+        padding: 80px 20px;
+        gap: 80px;
+    }
+
+    .mr-block {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .mr-block.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .mr-block.reverse img {
+        order: 1;
+    }
+
+    .mr-block.reverse .mr-text {
+        order: 2;
+    }
+
+    .mr-text h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .mr-text p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mr-text button {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .mr-block img {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .mr-expertise {
+        padding: 80px 20px;
+    }
+
+    .mr-exp-title {
+        font-size: 28px;
+    }
+
+    .mr-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    .mr-card {
+        padding: 30px 24px;
+    }
+
+    .mr-card ul li {
+        font-size: 14px;
+    }
+}
+
+/* ===== DEFENCE/ENERGY/AEROSPACE PAGES ===== */
+@media (max-width: 768px) {
+    .defence-hero,
+    .energy-hero {
+        height: auto;
+        min-height: 70vh;
+        padding: 100px 20px 60px;
+    }
+
+    .defence-hero h1,
+    .energy-hero h1 {
+        font-size: 36px;
+    }
+
+    .defence-hero p,
+    .energy-hero p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .energy-divider {
+        width: 70px;
+        margin: 20px auto;
+    }
+
+    .energy-scroll {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .defence-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 80px 20px;
+    }
+
+    .defence-images {
+        order: 1;
+    }
+
+    .defence-text,
+    .aero-content {
+        order: 2;
+        margin-left: 0;
+    }
+
+    .defence-text h3,
+    .aero-content h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .defence-text p,
+    .aero-content li {
+        font-size: 15px;
+    }
+
+    .aero-content .intro {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .aero-content ul {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .defence-cta {
+        padding: 80px 20px;
+    }
+
+    .defence-cta h2 {
+        font-size: 28px;
+    }
+
+    .btn-primary {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+}
+
+/* ===== FOOTER ===== */
+@media (max-width: 768px) {
+    .footer {
+        padding: 60px 20px 40px;
+    }
+
+    .footer-logo {
+        margin-bottom: 40px;
+    }
+
+    .footer-logo img {
+        width: 100px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 30px;
+        margin-bottom: 50px;
+    }
+
+    .footer-links h4 {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+
+    .footer-links p {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-subscribe h4 {
+        font-size: 13px;
+    }
+
+    .footer-subscribe label {
+        font-size: 12px;
+    }
+
+    .footer-subscribe input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .footer-subscribe button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer-legal {
+        font-size: 12px;
+    }
+
+    .footer-social h4 {
+        font-size: 13px;
+    }
+
+    .social-icons a {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+    }
+
+    .social-icons svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* ===== SMALL MOBILE (< 480px) ===== */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .solutions-left h2,
+    .web3-left h2,
+    .mr-hero h1,
+    .defence-hero h1,
+    .energy-hero h1 {
+        font-size: 28px;
+    }
+
+    .about-title {
+        font-size: 48px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .solution-card,
+    .web3-feature,
+    .about-card,
+    .mr-card {
+        padding: 24px 20px;
+    }
+}
+
+/* ===== TABLET (768px - 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .solutions-premium,
+    .web3-section,
+    .about-premium {
+        padding: 100px 40px;
+    }
+
+    .mr-hero {
+        padding: 120px 40px;
+        gap: 40px;
+    }
+
+    .mr-industries {
+        padding: 100px 40px;
+    }
+
+    .defence-content {
+        padding: 100px 40px;
+        gap: 50px;
+    }
+
+    .footer {
+        padding: 80px 40px 50px;
+    }
+
+    .footer-links {
+        gap: 50px;
+    }
+}
+
+/* ===== LANDSCAPE MOBILE ===== */
+@media (max-width: 900px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 20px 40px;
+    }
+
+    .defence-hero,
+    .energy-hero {
+        min-height: 100vh;
+    }
+
+    .mr-hero {
+        min-height: auto;
+    }
+}
+
+/* ===== PREVENT HORIZONTAL SCROLL ===== */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ===== CANVAS RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+    #web3-bg,
+    #mr-tech-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+/* ===== SMOOTH TRANSITIONS ===== */
+@media (max-width: 768px) {
+    * {
+        transition: none !important;
+    }
+
+    .reveal {
+        transition: opacity 0.6s ease, transform 0.6s ease !important;
+    }
+}
+
+/* ===== TOUCH OPTIMIZATION ===== */
+@media (max-width: 768px) {
+    a, button {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .solution-card,
+    .web3-feature,
+    .about-card,
+    .mr-card {
+        -webkit-tap-highlight-color: transparent;
+    }
+}

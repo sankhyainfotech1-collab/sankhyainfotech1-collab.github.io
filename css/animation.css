@@ -1,0 +1,21 @@
+/* ===== REVEAL ===== */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all .8s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:none;
+}
+
+/* ===== CARD HOVER ===== */
+.mr-card{
+  transition:.4s ease;
+}
+
+.mr-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+}

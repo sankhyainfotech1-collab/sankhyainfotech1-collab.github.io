@@ -1,0 +1,53 @@
+/* ===== NAVBAR ===== */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:100;
+  backdrop-filter:blur(12px);
+  background:rgba(5,10,25,.6);
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:16px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+}
+
+.logo img{
+  width:36px;
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  padding:80px 8%;
+  background:#02030a;
+}
+
+.footer-links{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:40px;
+  margin:60px 0;
+}
+
+.footer-bottom{
+  display:grid;
+  grid-template-columns:1.5fr 2fr 1fr;
+  gap:40px;
+}
