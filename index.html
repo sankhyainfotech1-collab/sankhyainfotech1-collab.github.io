@@ -5,17 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sankhya Infotech</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css"> <!-- index.html only -->
   <link rel="stylesheet" href="css/responsive.css">
+
 
 
   <!-- Three.js -->
@@ -24,7 +24,7 @@
 
 <body>
   <!-- NAVBAR -->
-  <header class="navbar" style="background: rgba(5, 10, 25, 0.8);">
+  <header class="navbar">
     <div class="nav-container">
 
       <div class="logo">
@@ -32,25 +32,24 @@
         <span>Sankhya Infotech</span>
       </div>
 
-
       <nav class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="mr-solutions.html">MR-Solutions</a>
-        <a href="#">Investors</a>
+        <a href="investor.html">Investors</a>
       </nav>
 
       <div class="menu-toggle" id="menuToggle">☰</div>
 
-
     </div>
   </header>
+
 
   <!-- HERO -->
   <div class="hero">
     <canvas id="web3-bg"></canvas>
 
     <div class="hero-content">
-      <h1>UNLEASHING THE POWER <br>OF AUTONOMY</h1>
+      <h1>UNLEASHING THE POWER <br>OF ATONOMY</h1>
       <p>We are engineers, investors & traders consumed by building the future of WEB3.</p>
     </div>
   </div>
@@ -62,7 +61,7 @@
 
       <!-- LEFT -->
       <div class="solutions-left">
-        <h2>INDUSTRY<br>SOLUTIONS</h2>
+        <h2>IND<span class="hl-blue">U</span>STRY<br>SOL<span class="hl-pink">U</span>TIONS</h2>
 
         <p>
           Innovative ideas become real-world decentralized applications.
@@ -115,8 +114,8 @@
         <div class="web3-heading-wrap">
 
           <h2 data-text="WEB3 Infrastructure at a scale">
-            WEB3<br>
-            Infrastructure<br>
+            W<span class="hl-pink">E</span>B3<br>
+            Infrastru<span class="hl-blue">c</span>ture<br>
             at a scale
           </h2>
 
@@ -172,8 +171,6 @@
 
       <!-- LEFT VISUAL -->
       <div class="about-left">
-        <div class="about-glow"></div>
-
         <h2 class="about-title">
           ab<span>o</span>ut<br>us
         </h2>
@@ -332,21 +329,10 @@
 
   </div>
   <!-- JS -->
-  <script src="js/web3.js"></script>
-  <!-- <script src="js/animations.js"></script> -->
-  <script src="js/background.js"></script>
-  <script src="js/mobile.js"></script>
-  <script>
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
-
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  }
-</script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/web3-hero.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

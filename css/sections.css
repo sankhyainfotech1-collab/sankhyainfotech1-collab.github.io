@@ -1,0 +1,196 @@
+/* =============================================================
+   SECTIONS  —  hero · solutions · web3 · about  (index page)
+   ============================================================= */
+
+/* ── Hero ── */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* ── Shared section layout (solutions / web3 / about) ── */
+.solutions-premium,
+.web3-section,
+.about-premium {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: var(--section-pad);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* ── Industry Solutions ── */
+.solutions-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.solutions-left h2 {
+  font-size: 72px;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.solutions-left p {
+  font-size: 17px;
+  line-height: 1.7;
+  opacity: 0.8;
+  max-width: 480px;
+}
+
+.solutions-right {
+  display: grid;
+  gap: 28px;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Web3 Infrastructure ── */
+.web3-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.web3-heading-wrap {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+
+.web3-left h2 {
+  font-size: 68px;
+  line-height: 1.1;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.web3-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* web3 feature blocks */
+.web3-feature {
+  position: relative;
+  margin-top: 36px;
+  padding: 28px 24px 28px 28px;
+  border-left: 4px solid;
+  max-width: 520px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.5s var(--ease-smooth);
+}
+
+.web3-feature h4 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.web3-feature:hover h4 { transform: translateX(4px); }
+
+.web3-feature p {
+  font-size: 15px;
+  opacity: 0.7;
+  line-height: 1.7;
+  transition: opacity 0.3s;
+}
+
+.web3-feature:hover {
+  transform: translateX(12px) scale(1.02);
+  background: var(--bg-card-hover);
+  padding-left: 32px;
+}
+
+.web3-feature:hover p { opacity: 0.95; }
+
+/* colour variants */
+.web3-feature.red   { border-left-color: var(--red); }
+.web3-feature.red h4   { color: var(--red); }
+.web3-feature.red:hover { box-shadow: 0 12px 40px rgba(255,90,95,0.3), inset 0 0 0 1px rgba(255,90,95,0.2); border-left-color: #ff7175; }
+.web3-feature.red:hover h4  { color: #ff7175; text-shadow: 0 0 20px rgba(255,90,95,0.4); }
+
+.web3-feature.green { border-left-color: var(--green); }
+.web3-feature.green h4 { color: var(--green); }
+.web3-feature.green:hover { box-shadow: 0 12px 40px rgba(124,255,138,0.3), inset 0 0 0 1px rgba(124,255,138,0.2); border-left-color: var(--green-light); }
+.web3-feature.green:hover h4 { color: var(--green-light); text-shadow: 0 0 20px rgba(124,255,138,0.4); }
+
+.web3-feature.blue  { border-left-color: var(--blue); }
+.web3-feature.blue h4  { color: var(--blue); }
+.web3-feature.blue:hover { box-shadow: 0 12px 40px rgba(122,162,255,0.3), inset 0 0 0 1px rgba(122,162,255,0.2); border-left-color: #92b5ff; }
+.web3-feature.blue:hover h4  { color: #92b5ff; text-shadow: 0 0 20px rgba(122,162,255,0.4); }
+
+/* ── About Us ── */
+.about-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.about-title {
+  position: relative;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: lowercase;
+  z-index: 2;
+}
+
+.about-title span {
+  color: var(--purple);
+  display: inline-block;
+  animation: letterBounce 2s ease infinite;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}

@@ -10,13 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/mr.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css"> <!-- other pages -->
     <link rel="stylesheet" href="css/responsive.css">
-
 </head>
 
 <body>
@@ -24,7 +22,7 @@
     <canvas id="mr-tech-bg"></canvas>
 
     <!-- NAVBAR -->
-    <header class="navbar" style="background: rgba(5, 10, 25, 0.8);">
+    <header class="navbar">
         <div class="nav-container">
 
             <div class="logo">
@@ -32,11 +30,10 @@
                 <span>Sankhya Infotech</span>
             </div>
 
-
             <nav class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
                 <a href="mr-solutions.html">MR-Solutions</a>
-                <a href="#">Investors</a>
+                <a href="investor.html">Investors</a>
             </nav>
 
             <div class="menu-toggle" id="menuToggle">☰</div>
@@ -45,10 +42,12 @@
     </header>
 
 
+
     <!-- ===== HERO ===== -->
     <section class="mr-hero">
         <div class="mr-hero-left">
-            <h1>
+            <h1 style="font-size: 48px;margin-bottom: 70px;background: var(--grad-brand);-webkit-background-clip: text;-webkit-text-fill-color: transparent;
+                ">
                 Driving Sankhya Towards<br>
                 The Creation of<br>
                 Mixed Reality World
@@ -75,10 +74,15 @@
         <!-- DEFENCE -->
         <div class="mr-block">
             <div class="mr-text">
-                <h2>DEFENCE</h2>
+                <h2 data-text="WEB3 Infrastructure at a scale">
+                    D<span class="hl-pink">E</span>FE<span class="hl-blue">N</span>CE
+                </h2>
                 <p>
-                    Sankhya partners with defence labs to deliver virtual training
-                    and simulation solutions for defence forces.
+                    Sankhya collaborates with defence laboratories to deliver advanced virtual training and simulation
+                    solutions for defence forces. By combining mixed reality technologies with mission-specific
+                    scenarios, these platforms help personnel strengthen operational skills, improve mission readiness,
+                    and minimize risks associated with live training exercises all within a safe, controlled
+                    environment.
                 </p>
                 <a href="defence.html"><button>Learn More</button></a>
             </div>
@@ -94,10 +98,11 @@
                 alt="">
 
             <div class="mr-text">
-                <h2>AEROSPACE</h2>
+                <h2 data-text="WEB3 Infrastructure at a scale">
+                    A<span class="hl-pink">E</span>RO<span class="hl-blue">S</span>PACE
+                </h2>
                 <p>
-                    Sankhya's innovative training solutions are used by many leading aerospace companies and products
-                    and training solutions are complaint to industry standards such as AICC & SCORM
+                    Sankhya partners with aerospace organizations to deliver advanced simulation and training solutions that replicate complex flight operations and mission scenarios. These virtual platforms help pilots and engineers enhance their skills, improve safety, and optimize performance while reducing costs and risks associated with live trials.
                 </p>
                 <a href="aerospace.html"><button>Learn More</button></a>
             </div>
@@ -107,11 +112,11 @@
         <!-- ENERGY -->
         <div class="mr-block">
             <div class="mr-text">
-                <h2>ENERGY</h2>
+                <h2 data-text="WEB3 Infrastructure at a scale">
+                    E<span class="hl-pink">N</span>ER<span class="hl-blue">G</span>Y
+                </h2>
                 <p>
-                    Sankhya's offers a range of simulation solutions and training platforms that automates the entire
-                    training system and provides an opportunity to monitor training and calculate the efficacy of the
-                    training programs
+                    Sankhya collaborates with energy sector organizations to provide immersive simulation and training solutions that model complex industrial processes and operational scenarios. These platforms enable engineers and technicians to practice safely, improve efficiency, and enhance decision-making while reducing risks and costs associated with real-world operations.
                 </p>
                 <a href="energy.html"><button>Learn More</button></a>
             </div>
@@ -277,9 +282,9 @@
     </footer>
 
     <!-- JS -->
-    <script src="js/animations.js"></script>
-    <script src="js/mr-background.js"></script>
-    <script src="js/mobile.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mr-solutions.js"></script>
 
 
 </body>

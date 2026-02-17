@@ -5,20 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/defence.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css"> <!-- other pages -->
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
     <canvas id="mr-tech-bg"></canvas>
-    <!-- NAVBAR -->
-    <header class="navbar" style="background: rgba(5, 10, 25, 0.8);">
+    <header class="navbar">
         <div class="nav-container">
 
             <div class="logo">
@@ -26,17 +23,17 @@
                 <span>Sankhya Infotech</span>
             </div>
 
-
             <nav class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
                 <a href="mr-solutions.html">MR-Solutions</a>
-                <a href="#">Investors</a>
+                <a href="investor.html">Investors</a>
             </nav>
 
             <div class="menu-toggle" id="menuToggle">☰</div>
 
         </div>
     </header>
+
     <section class="defence-hero">
         <div class="defence-hero-content">
             <h1>Defence Mixed Reality Solutions</h1>
@@ -210,7 +207,8 @@
         </div>
 
     </footer>
-    <script src="js/mr-background.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/app.js"></script>
 
     <script>
         const reveals = document.querySelectorAll(".reveal");
@@ -227,7 +225,7 @@
         window.addEventListener("scroll", revealOnScroll);
         revealOnScroll();
     </script>
-    <script src="js/mobile.js"></script>
+
 </body>
 
 </html>
