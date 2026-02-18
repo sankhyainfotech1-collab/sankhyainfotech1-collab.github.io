@@ -13,6 +13,13 @@
   pointer-events: none;
   background: transparent;
 }
+#mr-tech-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 
 html, body {
   background: var(--bg);
@@ -71,8 +78,8 @@ section {
 }
 
 .logo img {
-  width: 32px;
-  height: 32px;
+  width: 130px;
+  height: 130px;
 }
 
 .nav-links {

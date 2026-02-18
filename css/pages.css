@@ -448,10 +448,11 @@
   grid-template-columns: 280px 1fr;
   max-width: 1400px;
   margin: 0 auto;
-  min-height: 100vh;
   padding: 140px 40px 100px;
-  gap: 80px;
+  gap: 60px;
 }
+
+
 
 /* ── Sidebar ── */
 .ir-sidebar {
@@ -463,11 +464,21 @@
   backdrop-filter: blur(18px);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
+  align-self: start;
 }
 
 .ir-sidebar ul {
   list-style: none;
 }
+.ir-content {
+  position: relative;
+  z-index: 2;
+}
+
+.ir-sidebar {
+  z-index: 3;
+}
+
 
 .ir-sidebar li {
   padding: 14px 18px;
