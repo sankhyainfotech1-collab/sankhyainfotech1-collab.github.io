@@ -1,0 +1,290 @@
+/* =============================================================
+   RESPONSIVE  —  all breakpoints consolidated
+   Breakpoints: 1100px · 900px · 700px · 600px
+   ============================================================= */
+
+/* ── 1100px: solutions two-col still fine; MR blocks start stacking ── */
+@media (max-width: 1100px) {
+  .mr-hero {
+    grid-template-columns: 1fr;
+    padding: 100px 6%;
+  }
+
+  .mr-hero h1 {
+    font-size: 48px;
+  }
+}
+
+/* ── 900px: all main sections stack to single column ── */
+@media (max-width: 900px) {
+
+  /* nav */
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    background: rgba(5, 10, 25, 0.95);
+    width: 220px;
+    height: calc(100vh - 70px);
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    backdrop-filter: blur(12px);
+    z-index: var(--z-nav);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* index sections */
+  .solutions-premium,
+  .web3-section,
+  .about-premium {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 80px 6%;
+  }
+
+  .solutions-left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .solutions-left h2 {
+    font-size: 52px;
+  }
+
+  .solutions-left p {
+    max-width: 600px;
+  }
+
+  .web3-left {
+    text-align: center;
+  }
+
+  .web3-left h2 {
+    font-size: 52px;
+  }
+
+  .web3-right {
+    align-items: center;
+  }
+
+  .web3-feature {
+    max-width: 100%;
+  }
+
+  .stack-graphic {
+    position: static;
+    margin: 40px auto 60px;
+  }
+
+  .about-left {
+    height: 300px;
+  }
+
+  .about-title {
+    font-size: 56px;
+  }
+
+  .about-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-btn {
+    width: 200px;
+  }
+
+  /* mr-solutions */
+  .mr-block {
+    grid-template-columns: 1fr;
+  }
+
+  .mr-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .mr-industries {
+    gap: 80px;
+  }
+
+  /* defence / energy */
+  .defence-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 80px 6%;
+  }
+
+  .aero-content {
+    margin-left: 0;
+  }
+
+  /* footer */
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* ── 700px: mobile fine-tuning ── */
+@media (max-width: 700px) {
+
+  .solutions-premium,
+  .web3-section,
+  .about-premium {
+    padding: 60px 5%;
+  }
+
+  .solutions-left h2 {
+    font-size: 44px;
+  }
+
+  .solutions-left p {
+    font-size: 16px;
+  }
+
+  .solution-card {
+    padding: 28px 24px;
+  }
+
+  .solution-card svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .solution-card h3 {
+    font-size: 21px;
+  }
+
+  .solution-card p {
+    font-size: 14px;
+  }
+}
+
+/* ── 600px: small phones ── */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .web3-left h2 {
+    font-size: 40px;
+  }
+
+  .web3-feature {
+    padding: 24px 20px 24px 24px;
+    margin-top: 24px;
+  }
+
+  .web3-feature h4 {
+    font-size: 22px;
+  }
+
+  .web3-feature p {
+    font-size: 14px;
+  }
+
+  .stack-graphic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mr-hero h1 {
+    font-size: 38px;
+  }
+
+  .mr-text h2 {
+    font-size: 32px;
+  }
+
+  .mr-exp-title {
+    font-size: 36px;
+  }
+
+  .mr-card {
+    padding: 28px;
+  }
+
+  .defence-hero h1 {
+    font-size: 40px;
+  }
+
+  .defence-cta h2 {
+    font-size: 28px;
+  }
+
+  .energy-hero h1 {
+    font-size: 44px;
+  }
+}
+
+/* =============================================================
+   INVESTOR RESPONSIVE FIX
+   ============================================================= */
+
+/* ===== Investor Mobile Fix ===== */
+@media (max-width: 900px) {
+
+  .ir-layout {
+    grid-template-columns: 1fr;
+    padding: 120px 20px 60px;
+    gap: 30px;
+  }
+
+  .ir-content {
+    max-width: 100%;
+  }
+
+  .ir-content h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .ir-year h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .ir-files {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ir-file {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    background: rgba(15, 20, 35, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+}
+
+
+@media (max-width: 900px) {
+  .ir-sidebar ul {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+  }
+
+  .ir-sidebar li {
+    white-space: nowrap;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}

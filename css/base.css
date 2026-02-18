@@ -1,0 +1,110 @@
+/* =============================================================
+   BASE  —  reset · tokens · typography
+   ============================================================= */
+
+/* ── Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #05070f;
+  color: #fff;
+  overflow-x: hidden;
+  letter-spacing: 0.2px;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+/* ── CSS Tokens ── */
+:root {
+  --blue:       #7aa2ff;
+  --blue-dark:  #4f6bff;
+  --blue-light: #9cb8ff;
+  --pink:       #ff4d8d;
+  --pink-light: #ff6b9d;
+  --green:      #7CFF8A;
+  --green-light:#95ffa0;
+  --red:        #ff5a5f;
+  --purple:     #a78bfa;
+
+  --bg:         #05070f;
+  --bg-card:    rgba(15, 20, 35, 0.4);
+  --bg-card-hover: rgba(15, 20, 35, 0.6);
+  --border:     rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(122, 162, 255, 0.3);
+
+  --grad-brand: linear-gradient(90deg, var(--blue), var(--pink));
+  --grad-card:  linear-gradient(135deg, #4f6bff, #a5b4ff);
+
+  --radius-sm:  10px;
+  --radius-md:  16px;
+  --radius-lg:  20px;
+  --radius-xl:  22px;
+
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --section-pad: 100px 8%;
+  --z-bg:    0;
+  --z-base:  2;
+  --z-nav:   1000;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* ── Gradient text utility ── */
+.grad-text {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Highlighted letter — bouncing coloured letter (about/solutions/web3) ── */
+.hl-blue {
+  color: var(--blue);
+  display: inline-block;
+  animation: letterBounce 2.2s ease infinite;
+  text-shadow: 0 0 28px rgba(122, 162, 255, 0.7);
+}
+
+.hl-pink {
+  color: var(--pink);
+  display: inline-block;
+  animation: letterBounce 2.2s ease 0.4s infinite;
+  text-shadow: 0 0 28px rgba(255, 77, 141, 0.7);
+}
+
+@keyframes letterBounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
