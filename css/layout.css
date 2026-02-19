@@ -118,7 +118,7 @@ section {
 .footer {
   background: #000;
   color: #fff;
-  padding: 100px 8% 60px;
+  padding: 40px 8% 30px;
   position: relative;
   z-index: var(--z-base);
 }
@@ -135,7 +135,7 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .footer-links h4,
@@ -194,6 +194,7 @@ section {
   font-size: 13px;
   line-height: 1.6;
   opacity: 0.65;
+  margin-top: 10px;
 }
 
 .social-icons a {
@@ -217,4 +218,12 @@ section {
 .social-icons svg {
   width: 18px;
   height: 18px;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px;
+  opacity: 0.6;
 }
