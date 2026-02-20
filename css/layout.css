@@ -57,13 +57,13 @@ section {
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 18px 20px;
+  width: 100%;
+  padding: 18px 40px;   /* control side breathing here */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 
 .logo {
   display: flex;

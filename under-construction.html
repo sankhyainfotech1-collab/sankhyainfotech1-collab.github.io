@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launching Soon | Sankhya Infotech</title>
+
+    <link rel="icon" type="image/icon" href="./images/logo.avif">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Page-specific styles -->
+    <style>
+        /* =============================
+   UNDER CONSTRUCTION SECTION
+   ============================= */
+
+        .uc-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 140px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .uc-content {
+            max-width: 750px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ===== Title ===== */
+
+        .uc-title {
+            font-size: 64px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, var(--blue), var(--pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== Underline ===== */
+
+        .uc-line {
+            width: 0;
+            height: 3px;
+            margin: 25px auto 35px;
+            background: linear-gradient(90deg, var(--blue), var(--pink));
+            border-radius: 2px;
+            animation: lineExpand 0.8s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes lineExpand {
+            to {
+                width: 160px;
+            }
+        }
+
+        /* ===== Paragraph ===== */
+
+        .uc-section p {
+            font-size: 18px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUpText 0.8s ease forwards;
+            animation-delay: 1.2s;
+        }
+
+        .uc-sub {
+            opacity: 0;
+            margin-bottom: 40px;
+            animation: fadeUpText 0.8s ease forwards;
+            animation-delay: 1.4s;
+        }
+
+        @keyframes fadeUpText {
+            to {
+                opacity: 0.85;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== Button ===== */
+
+        .uc-btn {
+            display: inline-block;
+            padding: 16px 34px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--red), #ff7175);
+            color: #fff;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUpBtn 0.8s ease forwards;
+            animation-delay: 1.6s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .uc-btn:hover {
+            transform: translateY(-6px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(255, 90, 95, 0.4);
+        }
+
+        @keyframes fadeUpBtn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== Responsive ===== */
+
+        @media (max-width: 700px) {
+            .uc-title {
+                font-size: 42px;
+            }
+
+            .uc-section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Background Canvas -->
+    <canvas id="mr-tech-bg"></canvas>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <div class="logo">
+                <img src="images/logo.avif" alt="Sankhya logo">
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="mr-solutions.html">MR-Solutions</a>
+                <a href="investor.html">Investors</a>
+            </nav>
+
+            <div class="menu-toggle" id="menuToggle">☰</div>
+
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <section class="uc-section">
+
+        <div class="uc-content">
+
+            <h1 class="uc-title">
+                <span>Launching Soon</span>
+            </h1>
+
+            <div class="uc-line"></div>
+
+            <p>
+                We’re building the next phase of this experience.
+            </p>
+
+            <p class="uc-sub">
+                Stay tuned for something powerful.
+            </p>
+
+            <a href="index.html" class="uc-btn">Return to Home</a>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+    <script src="js/canvas.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -41,44 +41,113 @@
     </header>
 
 
-    <section class="ir-section">
+    <section class="ir-layout">
 
-        <div class="ir-container" style="text-align:center; padding:140px 20px;">
+        <!-- LEFT SIDEBAR -->
+        <aside class="ir-sidebar">
+            <ul>
+                <li class="active" data-target="financials">Financials</li>
+                <!-- <li data-target="annual">Annual Reports</li>
+                <li data-target="meetings">Shareholders Meetings</li>
+                <li data-target="governance">Corporate Governance</li> -->
+                <li data-target="contact">Investors Contact</li>
+            </ul>
+        </aside>
 
-            <h1 style="font-size:42px;margin-bottom:20px;margin-top: 21px;">
-                Investor Relations
-            </h1>
+        <div class="ir-content">
 
-            <div style="width:80px; height:3px; margin:20px auto; 
-                background:linear-gradient(90deg,#7aa2ff,#ff5a5f);
-                border-radius:2px;">
+            <!-- Financial Section -->
+            <div class="ir-section-content active" id="financials">
+                <h1>Financial Results</h1>
+                <div class="ir-year">
+                    <h3>FY 2025-26</h3>
+                    <div class="ir-files">
+                        <a href="./doc/Sankhya Q3 results.pdf" class="ir-file">Q3 Results</a>
+                        <a href="./doc/Sankhya Q3 results.pdf" class="ir-file">Q2 Results</a>
+                        <a href="./doc/Sankhya Q3 results.pdf" class="ir-file">Q1 Results</a>
+                    </div>
+                </div>
+
             </div>
 
-            <p style="max-width:760px; margin:30px auto; font-size:17px; line-height:1.8; opacity:0.85;">
-                Sankhya Infotech is a publicly listed, innovation-driven technology company
-                focused on simulation, mixed reality and enterprise software solutions.
-                We are currently updating our financial disclosures and investor materials.
-            </p>
+            <!-- Annual Reports -->
+            <!-- <div class="ir-section-content" id="annual">
+                <h1>Annual Reports</h1>
+                <p>Download annual financial statements and disclosures.</p>
+                <div class="ir-year">
+                    <h3>FY 2024-25</h3>
+                    <div class="ir-files">
+                        <a href="#" class="ir-file">Q4 Results</a>
+                        <a href="#" class="ir-file">Q3 Results</a>
+                        <a href="#" class="ir-file">Q2 Presentation</a>
+                        <a href="#" class="ir-file">Q1 Results</a>
+                    </div>
+                </div>
+            </div> -->
 
-            <p style="max-width:720px; margin:20px auto; opacity:0.75;">
-                Audited financial statements, quarterly reports, shareholding patterns
-                and regulatory filings will be available here shortly.
-            </p>
+            <!-- Meetings -->
+            <!-- <div class="ir-section-content" id="meetings">
+                <h1>Shareholders Meetings</h1>
+                <p>AGM notices, results, and voting outcomes.</p>
+                <div class="ir-year">
+                    <h3>FY 2024-25</h3>
+                    <div class="ir-files">
+                        <a href="#" class="ir-file">Q4 Results</a>
+                        <a href="#" class="ir-file">Q3 Results</a>
+                        <a href="#" class="ir-file">Q2 Presentation</a>
+                        <a href="#" class="ir-file">Q1 Results</a>
+                        <a href="#" class="ir-file">Q4 Results</a>
+                        <a href="#" class="ir-file">Q3 Results</a>
+                        <a href="#" class="ir-file">Q2 Presentation</a>
+                        <a href="#" class="ir-file">Q1 Results</a>
+                    </div>
+                    <h3>FY 2024-25</h3>
+                    <div class="ir-files">
+                        <a href="#" class="ir-file">Q4 Results</a>
+                        <a href="#" class="ir-file">Q3 Results</a>
+                        <a href="#" class="ir-file">Q2 Presentation</a>
+                        <a href="#" class="ir-file">Q1 Results</a>
+                        <a href="#" class="ir-file">Q4 Results</a>
+                        <a href="#" class="ir-file">Q3 Results</a>
+                        <a href="#" class="ir-file">Q2 Presentation</a>
+                        <a href="#" class="ir-file">Q1 Results</a>
+                    </div>
+                </div>
+            </div> -->
 
-            <div style="margin-top:40px;">
-                <a href="mailto:sankhyainfotechlimited@gmail.com" style="display:inline-block;
-                padding:14px 28px;
-                border-radius:8px;
-                background:linear-gradient(135deg,#ff5a5f,#ff7175);
-                color:#fff;
-                font-weight:600;
-                text-decoration:none;">
-                    Contact Investor Relations
-                </a>
+            <!-- Governance -->
+            <!-- <div class="ir-section-content" id="governance">
+                <h1>Corporate Governance</h1>
+                <p>Board structure, policies, and compliance disclosures.</p>
+                <div class="ir-year">
+                    <h3>FY 2024-25</h3>
+                    <div class="ir-files">
+                        <a href="#" class="ir-file">Q4 Results</a>
+                        <a href="#" class="ir-file">Q3 Results</a>
+                        <a href="#" class="ir-file">Q2 Presentation</a>
+                        <a href="#" class="ir-file">Q1 Results</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Contact -->
+            <div class="ir-section-content" id="contact">
+                <h1>Investors Contact</h1>
+                <p>Email: sankhyainfotechlimited@gmail.com</p>
+                <div class="ir-year">
+                    <h3>Registered Office:</h3>
+                    <div class="ir-files">
+                        <div class="ir-file">
+                            Unit 101, Monya Exotica, 514, Kakateeya Hills,<br>
+                            Madhapur, Shaikpet, <br>
+                            Hyderabad – 500081, <br>
+                            Telangana, India
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
-
     </section>
 
 
@@ -98,16 +167,28 @@
 
             <div>
                 <h4>INDUSTRY SOLUTIONS</h4>
-                <p>Decentralized Finance</p>
-                <p>NFT Experiences</p>
-                <p>Other Solutions</p>
+                <a href="under-construction.html">
+                    <p>Decentralized Finance</p>
+                </a>
+                <a href="under-construction.html">
+                    <p>NFT Experiences</p>
+                </a>
+                <a href="under-construction.html">
+                    <p>Other Solutions</p>
+                </a>
             </div>
 
             <div>
                 <h4>WEB3 INFRASTRUCTURE</h4>
-                <p>Build with WEB3 services</p>
-                <p>Manage Treasury</p>
-                <p>Access Liquidity</p>
+                <a href="under-construction.html">
+                    <p>Build with WEB3 services</p>
+                </a>
+                <a href="under-construction.html">
+                    <p>Manage Treasury</p>
+                </a>
+                <a href="under-construction.html">
+                    <p>Access Liquidity</p>
+                </a>
             </div>
 
             <div>
@@ -128,7 +209,9 @@
                 <a href="index.html#aboutUs">
                     <p>About Us</p>
                 </a>
-                <p>Blog</p>
+                <a href="under-construction.html">
+                    <p>Blog</p>
+                </a>
                 <a href="investor.html">
                     <p>Investors</p>
                 </a>
@@ -209,6 +292,7 @@
 
 
         </div>
+        <h5 style="margin-top: 10px;">Sankhya Infotech Limited</h5>
         <!-- Legal / Company Info -->
         <div class="footer-legal">
             <p><strong>CIN:</strong> L72200TG1997PLC045396</p>
